@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Translucent Border</title>
+
+  <style>
+    .title {
+      color: #333;
+      position: relative;
+      z-index: 1;
+    }
+
+    .solution {
+      align-items: center;
+      background: #d6ddbe;
+      display: flex;
+      height: 100vh;
+      justify-content:  center;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100vw;
+    }
+
+    .container {
+      background: #fff;
+      padding: 10px 25px;
+      max-width: 320px;
+      border: 20px solid hsla(0, 0%, 100%, .5);
+
+      /* solution */
+      background-clip: padding-box;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Translucent borders</h1>
+  <div class="solution">
+    <div class="container">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, autem dignissimos id odit dolorem illum reprehenderit molestiae nesciunt veritatis modi distinctio voluptas obcaecati natus quis, ad nisi quidem suscipit corrupti?</p>
+    </div>
+  </div>
+
+  <script>
+  </script>
+</body>
+</html>
