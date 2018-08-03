@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Multiple Borders</title>
+
+  <style>
+    .title {
+      color: #333;
+      position: relative;
+      z-index: 1;
+    }
+
+    .solution {
+      align-items: center;
+      background: #d6ddbe;
+      display: flex;
+      height: 100vh;
+      justify-content:  center;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100vw;
+    }
+
+    .container {
+      height: 300px;
+      width: 300px;
+
+      /* solution 1 */
+      /* background: url('./images/718smiley.svg') no-repeat bottom right / 100px 100px #92A940;
+      background-position: right 20px bottom 10px; */
+
+      /* solution 2 */
+      /* padding: 10px;
+      background: url('./images/718smiley.svg') no-repeat bottom right / 100px 100px #92A940;
+      background-origin: content-box; */
+
+      /* solution 3 */
+      background: url('./images/718smiley.svg') no-repeat bottom right / 100px 100px #92A940;
+      background-position: calc(100% - 20px) calc(100% - 10px);
+    }
+
+    .text {
+      color: #333333;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title"></h1>
+  <div class="solution">
+    <div class="container">
+      <h2 class="text">Happy</h2>
+    </div>
+  </div>
+</body>
+</html>
